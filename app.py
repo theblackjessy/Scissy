@@ -30,6 +30,8 @@ limiter = Limiter(app, default_limits=["1/day"])
 base_dir = os.path.dirname(os.path.realpath(__file__))
 app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///' + os.path.join(base_dir, 'cutty.db')
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = os.environ.get("DATABASE_URL")
+
 app.secret_key = '2e1ef6c2cd1efb6c3147'
 
 db = SQLAlchemy(app)
