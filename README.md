@@ -105,7 +105,7 @@ Some other feature soon to be added is the View analytics feature. For each URL 
 
 
 # Code Base Structure
-
+https://jessyblog.hashnode.dev/creating-a-url-shortener
 ## Authentication
 Users are required to be logged in to use the website. This is to enable the database to map generated links and QR codes to the specific users who created them; thus making sure that each user can only view, edit or delete the links they created.<br>
 
